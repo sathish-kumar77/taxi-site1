@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+  <title>Home - SAGO-Taxi</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/ev-logo-02.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!--CSS Plugins-->
+  <link rel="stylesheet" href="css/plugin.css">
+  <!-- Default CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/default.css">
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  
+
+  <!--FontAwesome CSS-->
+  <link rel="stylesheet" href="icons/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <%- include('../partials/header') %>
+
+
+</head>
+
+
+
+
+<body class="index-2">
+  
+
+  
+
+  <!-- Banner Section Starts -->
+  <section class="banner-1 pt-11 position-relative rounded3 rounded-top-0">
+    <div class="overlay "></div>
+    <div class="container position-relative">
+      <div class="banner-1-inner pt-9 text-white position-relative text-center text-lg-start">
+        <div class="section-title position-relative mb-9">
+          <div class="row gx-lg-5 gy-4">
+            <div class="col-lg-8">
+              <div class="section-title-left">
+                <h5 class="mb-2 text-white text-uppercase fw-medium">Not just a ride. Your reliable travel partner — anytime, anywhere.</h5>
+                <h1 class="text-white text-uppercase ps-4 border-start border-3 border-green"><span class="green">Your Ride. On Time. Every Time.
+
+                </span> </h1>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="section-title-right text-center position-relative">
+                <a href="service-list.html">
+                  <div class="spin-demo-main position-relative">
+                      <img src="/icons/taxi.png" alt="" class="">
+                      <svg id="rotatingText" viewBox="0 0 200 200" width="150" height="150">
+                          <defs>
+                              <path id="circle" d="M 100, 100
+                                                  m -75, 0
+                                                  a 75, 75 0 1, 0 150, 0
+                                                  a 75, 75 0 1, 0 -150, 0">
+                              </path>
+                          </defs>
+                          <text>
+                              <textPath alignment-baseline="hanging" xlink:href="#circle" class="text">
+                                  Book Your Ride Now &nbsp;Start Your Ride 
+                              </textPath>
+                          </text>
+                      </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>      
+        </div>
+        <div class="section-body position-relative overflow-visible">
+          <div class="row gx-lg-5">
+            <div class="col-xl-8 order-2 order-xl-1 align-self-end">
+              <div class="banner-1-image text-center">
+                <div class="banner-1-image-inner">
+                  <img src="images/Toyota Innova Crysta.webp" alt="" class="w-100">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 order-1 order-xl-2">
+              <div class="banner-info-right">
+                <h3 class="text-white mb-2">Toyota Innova Crysta</h3>
+                <p class="mb-4">Ride in unmatched comfort with our top-tier Innova Crysta fleet. With spacious seating for up to 6 passengers, rear AC vents, and smooth suspension, it’s perfect for airport transfers, outstation trips, or corporate travel.</p>
+                <div class="feature-list mb-11">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <div class="feature-box p-3 bg-lightgrey rounded1 fw-semibold">
+                        <ul class="list-unstyled d-flex justify-content-between align-items-center mb-4">
+                          <li><span class="h2 fw-bold">AC</span></li>
+                          <li class="h3"><i class="fa fa-car green" aria-hidden="true"></i></li>
+                        </ul>
+                        <span class="text-uppercase">Comfort Rides</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="feature-box p-3 bg-lightgrey rounded1 fw-semibold">
+                        <ul class="list-unstyled d-flex justify-content-between align-items-center mb-4">
+                          <li><span class="h2 fw-bold">₹</span> /km</li>
+                          <li class="h3"><i class="fa fa-money green" aria-hidden="true"></i></li>
+                        </ul>
+                        <span class="text-uppercase">Affordable Rates</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Taxi Booking Section -->
+  <section id="taxi-booking" class="taxi-booking-section py-5">
+    <div class="container">
+        <div class="taxi-container">
+            <div class="taxi-drive-in">
+                <div class="taxi-sign">TAXI BOOKING</div>
+                <div class="taxi-front"></div>
+                <div class="taxi-body">
+                    <div class="booking-form" id="bookingForm">
+                        <div class="form-header">
+                            <h2><i class="fa fa-car me-2"></i>BOOK YOUR RIDE</h2>
+                        </div>
+                        <form id="taxiBookingForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Mobile Number</label>
+                                    <input type="number" class="form-control" id="mobileNo" placeholder="Enter mobile number" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Service Type</label>
+                                    <select class="form-select" id="serviceType" required>
+                                        <option value="" disabled selected>Select service</option>
+                                        <option value="one-way">One Way</option>
+                                        <option value="round-trip">Round Trip</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Pickup Location</label>
+                                    <input type="text" class="form-control" id="pickupLocation" placeholder="Enter pickup" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Drop Location</label>
+                                    <input type="text" class="form-control" id="dropLocation" placeholder="Enter drop" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Pickup Date</label>
+                                    <input type="date" class="form-control" id="pickupDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Pickup Time</label>
+                                    <input type="time" class="form-control" id="pickupTime" required>
+                                </div>
+                                <!-- Added Round-Trip Field -->
+                                <div class="col-md-6 round-trip-fields" style="display: none;">
+                                    <label class="form-label">Return Date</label>
+                                    <input type="date" class="form-control" id="returnDate">
+                                </div>
+                                <div class="col-md-6 round-trip-fields" style="display: none;">
+                                  <label class="form-label">Return Time</label>
+                                  <input type="time" class="form-control" id="returnDate">
+                              </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-book btn-lg">
+                                        <i class="fas fa-car-side me-2"></i>Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="taxi-back"></div>
+                <div class="wheel front-wheel">
+                    <img src="images/wheel.png" alt="Tyre" class="tyre-img">
+                </div>
+                <div class="wheel back-wheel">
+                    <img src="images/wheel.png" alt="Tyre" class="tyre-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <!-- About Us Section Starts -->
+  <section class="about-us bg-lightgreen py-10">
+    <div class="container">
+      <div class="about-us-inner pt-11">
+        <div class="row gy-5 gx-lg-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="section-right text-center text-lg-start">
+              <div class="section-title mb-5">
+                <h6 class="mb-2 green1 text-uppercase fw-medium">About Us</h6>
+                <h2 class="ps-4 border-start border-3 border-green">Wherever you're going, we’ll get you there—safely, <span class="green"> comfortably, and on time</span></h2>
+              </div>
+              <div class="section-body">
+                <p class="mb-4">Welcome to SAGO-Taxi – where every ride is smooth, safe, and more than just a journey.</p>
+                <div class="service-list text-start">
+                  <div class="service-progress-list mb-6">
+                    <Span class="fw-bold">Driver Arrival Progress</Span>
+                    <div class="progress-bar-section w-lg-75">
+                      <div class="progress bg-darkgreen position-relative overflow-visible mt-2" 
+                           role="progressbar" aria-label="Driver Arrival Progress" 
+                           aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" 
+                           style="height: 15px">
+                      
+                        <div class="progress-bar rounded-start-2 bg-green position-relative overflow-visible" 
+                             style="width: 75%">
+                        
+                          <div class="percentage-wrapper position-absolute p-2 bg-green d-flex align-items-center justify-content-between rounded-circle">
+                            <span class="progress-num" data-val="75">0</span><span>%</span>
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>                   
+                  </div>
+                  
+                  
+                  <div class="service-progress-list mb-6">
+                    <Span class="fw-bold">Trip Completion Progress</Span>
+                    <div class="progress-bar-section w-lg-75">
+                      <div class="progress bg-darkgreen position-relative overflow-visible mt-2" 
+                           role="progressbar" aria-label="Trip Completion Progress" 
+                           aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
+                           style="height: 15px">
+                      
+                        <div class="progress-bar rounded-start-2 bg-green position-relative overflow-visible" 
+                             style="width: 60%">
+                        
+                          <div class="percentage-wrapper position-absolute p-2 bg-green d-flex align-items-center justify-content-between rounded-circle">
+                            <span class="progress-num" data-val="60">0</span><span>%</span>
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>                   
+                  </div>
+                  
+                  <div class="service-progress-list mb-6">
+                    <Span class="fw-bold">City Coverage Expansion</Span>
+                    <div class="progress-bar-section w-lg-75">
+                      <div class="progress bg-darkgreen position-relative overflow-visible mt-2" 
+                           role="progressbar" aria-label="City Coverage Expansion" 
+                           aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" 
+                           style="height: 15px">
+                      
+                        <div class="progress-bar rounded-start-2 bg-green position-relative overflow-visible" 
+                             style="width: 85%">
+                        
+                          <div class="percentage-wrapper position-absolute p-2 bg-green d-flex align-items-center justify-content-between rounded-circle">
+                            <span class="progress-num" data-val="85">0</span><span>%</span>
+                          </div>
+                      
+                        </div>
+                      </div>
+                    </div>                   
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="section-left position-relative">
+              <img src="images/about-us-customer.jpg" alt="about image" class="w-100 h-40 rounded2">
+              <div class="about-counter-box bg-green1 border border-4 border-lightgreen p-4 text-white position-absolute rounded2 text-center text-lg-start mt-2">
+                <div class="about-counter-image mb-2">
+                  <img src="images/PNG/customers.png" alt="about counter image">
+                </div>
+                <div class="counter-box mb-6 pb-6 border-bottom border-1 text-white border-grey1">
+                  <h2 class="green"><span class="num" data-val="10"></span>K+</h2>
+                  <span class="small">Valueable Customers</span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us Section Ends -->
+
+  <!-- Service Section Starts -->
+  <section class="service pb-6">
+    <div class="container">
+      <div class="service-inner">
+        <div class="section-title mb-6 text-center text-lg-start">
+          <div class="row gx-lg-5 gy-4 align-items-center">
+            <div class="col-lg-7">
+              <div class="section-title-left">
+                <h6 class="mb-2 green1 text-uppercase fw-medium">Our Services</h6>
+                <h2 class="ps-4 border-start border-3 border-green">Book your ride in seconds.  <span class="green">Affordable, safe, and available 24/7 for city rides, airport transfers, and outstation travel.</span> </h2>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="section-title-right">
+                <p class="mb-3">Whether it's a quick city hop or a long-distance trip, our professional drivers ensure a smooth and timely ride every time.</p>
+                <a href="/service" class="btn btn2">More Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-body">
+          <div class="row  gy-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="service-box p-6 border bg-white border-2 border-lightgreen rounded2 shadow">
+                <div class="service-icon mb-4">
+                  <img src="images/PNG/one-way-trip.png" class="w-20 h-auto" alt="service-icon">
+                </div>
+                <div class="service-info">
+                  <h4><a href="service-detail.html" class="black">ONE-WAY TAXI</a></h4>
+                  <p class="mt-2 mb-4">Why pay for the round trip when you only need a drop? Our one-way taxi service offers unbeatable rates for single-direction travel—perfect for smart, budget-conscious riders with simple needs.</p>
+                  <a href="service-detail.html" class="btn border border-1 border-green">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-box p-6 border border-2 bg-white border-lightgreen rounded2 shadow">
+                <div class="service-icon mb-4">
+                  <img src="images/PNG/rount-trip.png" class="w-20 h-auto" alt="service-icon">
+                </div>
+                <div class="service-info">
+                  <h4><a href="service-detail.html" class="black">ROUND TRIP TAXI</a></h4>
+                  <p class="mt-2 mb-4">Double the journey, double the comfort! Round trip taxis make travel easier with to-and-fro convenience—ideal for family holidays, office meetings, leisure rides, or weekend escapes without hassle or stress.</p>
+                  <a href="service-detail.html" class="btn border border-1 border-green">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-box p-6 border border-2 bg-white border-lightgreen rounded2 shadow">
+                <div class="service-icon mb-4">
+                  <img src="images/PNG/airport-pickup.png" class="w-20 h-auto" alt="service-icon">
+                </div>
+                <div class="service-info">
+                  <h4><a href="service-detail.html" class="black">AIRPORT PICKUP TAXI</a></h4>
+                  <p class="mt-2 mb-4">Never miss a flight again! Our airport taxi service provides reliable, on-time pickups with 24/7 availability and smooth, stress-free rides to or from the terminal—because your journey starts with us.
+
+                  </p>
+                  <a href="service-detail.html" class="btn border border-1 border-green">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-box p-6 border border-2 bg-white border-lightgreen rounded2 shadow">
+                <div class="service-icon mb-4">
+                  <img src="images/PNG/airport-drop.png" class="w-20 h-auto" alt="service-icon">
+                </div>
+                <div class="service-info">
+                  <h4><a href="service-detail.html" class="black">AIRPORT DROP TAXI</a></h4>
+                  <p class="mt-2 mb-4">Just need a drop? We’ve got you covered. Our drop taxi service is fast, efficient, and affordable—no hidden charges, no detours—just a smooth ride to your exact destination, on time.</p>
+                  <a href="service-detail.html" class="btn border border-1 border-green">Book Now</a>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Service Section Ends -->
+
+  <!-- Pricing Section Starts -->
+  <section class="pricing position-relative ">
+    <div class="container">
+      <div class="pricing-inner">
+        <div class="row align-items-center gy-6 pb-10">
+          <!-- <div class="col-lg-4">
+            <div class="section-title text-center text-lg-start">
+              <h6 class="text-uppercase fw-medium green1 mb-1">Pricing</h6>
+              <h2 class="ps-4 border-start border-3 border-green mb-4">Explore our charging<span class="green"> Plans</span></h2>
+              <p class="mb-4">Find your perfect ride with SAGO-Taxi – from sleek Sedans to spacious SUVs. Travel in style, comfort, and safety-book now and enjoy the journey!</p>
+              <a href="price.html" class="btn btn2">View Plans</a>
+            </div>
+          </div> -->
+
+          <div class="row d-flex align-items-center justify-content-between  gx-lg-3 gy-4 pb-4">
+            <div class="col-lg-7">
+              <div class="section-title-left">
+                <h6 class="mb-2 green1 text-uppercase fw-medium">Our Tariff&#39;s</h6>
+                <h2 class="ps-4 border-start border-3 border-green">
+                  Book your taxi <span class="green">Instantly!</span> 
+                </h2>              </div>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <div class="section-title-right">
+                <!-- <p class="mb-3">Whether it's a quick city hop or a long-distance trip, our professional drivers ensure a smooth and timely ride every time.</p> -->
+                <a href="/tariff" class="btn btn2">More Tariff</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-box bg-success bg-opacity-10 py-4 px-4 rounded2 border border-2 border-lightgreen h-100 d-flex flex-column justify-content-between">
+              <div class="price-title text-center mb-3">
+                <h4 class="green1 text-uppercase mb-1">One Way Trip</h4>
+                <span class="fw-medium">Sedan 4 + 1 <span class="badge bg-success ms-2">A/C</span></span>
+              </div>
+              <div class="car-img d-flex justify-content-center mb-3">
+                <img src="/images/Primesedan.jpg" alt="Sedan" width="160" />
+              </div>
+              <div class="plan-listing mb-3 text-center">
+                <ul class="list-unstyled">
+                  <li class="mb-2 pb-2 border-bottom"><i class="fa fa-check green1 me-1"></i> Driver Bata: 300</li>
+                  <li class="mb-2 pb-2 border-bottom text-danger"><i class="fa fa-check green1 me-1"></i> Toll, State Tax, Hills, Parking Extra</li>
+                </ul>
+              </div>
+              <div class="plan-price py-3 green1 text-center">
+                <div class="d-flex align-items-center justify-content-center">
+                  <span class="currency fw-bold h5">₹</span>
+                  <span class="h1 fw-bold mb-0 lh-1">14</span>
+                </div>
+                <span>per KM</span>
+              </div>
+              <div class="pricing-btn text-center">
+                <a href="#" class="btn btn2 mb-2">Choose Plan</a>
+                <p class="small">*Please read our terms & conditions before booking</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- SUV One Way -->
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-box bg-white py-4 px-4 rounded2 border border-2 border-lightgreen h-100 d-flex flex-column justify-content-between">
+              <div class="price-title text-center mb-3">
+                <h4 class="green1 text-uppercase mb-1">One Way Trip</h4>
+                <span class="fw-medium">SUV 6 + 1 <span class="badge bg-success ms-2">A/C</span></span>
+              </div>
+              <div class="car-img d-flex justify-content-center mb-3">
+                <img src="/images/SUV.jpg" alt="SUV" width="140" />
+              </div>
+              <div class="plan-listing mb-3 text-center">
+                <ul class="list-unstyled">
+                  <li class="mb-2 pb-2 border-bottom"><i class="fa fa-check green1 me-1"></i> Driver Bata: 400</li>
+                  <li class="mb-2 pb-2 border-bottom text-danger"><i class="fa fa-check green1 me-1"></i> Toll, State Tax, Hills, Parking Extra</li>
+                </ul>
+              </div>
+              <div class="plan-price py-3 green1 text-center">
+                <div class="d-flex align-items-center justify-content-center">
+                  <span class="currency fw-bold h5">₹</span>
+                  <span class="h1 fw-bold mb-0 lh-1">18</span>
+                </div>
+                <span>per KM</span>
+              </div>
+              <div class="pricing-btn text-center">
+                <a href="#" class="btn btn2 mb-2">Choose Plan</a>
+                <p class="small">*Please read our terms & conditions before booking</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Innova One Way -->
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-box bg-success bg-opacity-10 py-4 px-4 rounded2 border border-2 border-lightgreen h-100 d-flex flex-column justify-content-between">
+              <div class="price-title text-center mb-3">
+                <h4 class="green1 text-uppercase mb-1">One Way Trip</h4>
+                <span class="fw-medium">Innova 6 + 1 <span class="badge bg-success ms-2">A/C</span></span>
+              </div>
+              <div class="car-img d-flex justify-content-center mb-3">
+                <img src="/images/Innova.jpg" alt="Innova" width="150" />
+              </div>
+              <div class="plan-listing mb-3 text-center">
+                <ul class="list-unstyled">
+                  <li class="mb-2 pb-2 border-bottom"><i class="fa fa-check green1 me-1"></i> Driver Bata: 500</li>
+                  <li class="mb-2 pb-2 border-bottom text-danger"><i class="fa fa-check green1 me-1"></i> Toll, State Tax, Hills, Parking Extra</li>
+                </ul>
+              </div>
+              <div class="plan-price py-3 green1 text-center">
+                <div class="d-flex align-items-center justify-content-center">
+                  <span class="currency fw-bold h5">₹</span>
+                  <span class="h1 fw-bold mb-0 lh-1">20</span>
+                </div>
+                <span>per KM</span>
+              </div>
+              <div class="pricing-btn text-center">
+                <a href="#" class="btn btn2 mb-2">Choose Plan</a>
+                <p class="small">*Please read our terms & conditions before booking</p>
+              </div>
+            </div>
+          </div>
+        
+             </div>
+             </div>
+
+
+              </div>
+         
+     
+  </section>
+  <!-- Pricing Section Ends -->
+
+  <!-- How we work Section Starts -->
+  <section class="how-work bg-lightgreen py-10">
+    <div class="container">
+      <div class="how-work-inner">
+        <div class="section-title text-center w-lg-50 w-md-75 m-auto mb-8">
+          <h6 class="text-uppercase fw-medium mb-1 green1">Cities</h6>
+          <h2 class="fs-4">Discover Vibrant Routes and Exciting Destinations with – <span class="green">SAGO-Taxi</span> your trusted travel partner across cities and beyond!</h2>
+        </div>
+        
+        <div class="section-body position-relative">
+          <!-- SVG Road with curves -->
+          <svg class="timeline-road" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M50,0 C45,25 55,50 45,75 S55,100 50,100" stroke="#87C332" stroke-width="6" stroke-dasharray="5,5" fill="none" />
+          </svg>
+          
+          <div class="timeline position-relative z-2 text-center text-md-start">
+            <!-- Chennai -->
+            <div class="timeline-row position-relative w-md-50 mb-4">
+              <div class="work-box-number text-center p-2 rounded-circle border border-3 border-lightgreen bg-green d-inline-block h-auto mb-2 position-absolute top-50 start-70 translate-middle">
+                <!-- Location Icon -->
+                <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                </svg>
+                <h4 class="text-white">01.</h4>
+              </div>
+              
+              
+              <div class="work-info position-relative p-4 border-3 border border-white bg-lightgreen1 me-9 rounded2 d-flex justify-content-between align-items-center">
+                <div class="work-text pe-1">
+                  <h4 class="mb-2">Chennai</h4>
+                  <p>A vibrant coastal city known for its rich cultural heritage, classical music, temples, and beaches—Chennai blends tradition with modernity and serves as Tamil Nadu's bustling capital.</p>
+                </div>
+                <div class="work-img">
+                  <img src="images/Chennai.png" class="rounded-1 shadow-lg" alt="Chennai Icon" width="100" height="auto" />
+                </div>
+              </div>
+            </div>
+            
+            <!-- Mysore -->
+            <div class="timeline-row position-relative w-md-50 ms-auto mb-4">
+              <div class="work-box-number text-center p-2 rounded-circle border border-3 border-lightgreen bg-green d-inline-block h-auto mb-2 position-absolute top-50 start-0 translate-middle">
+                <!-- Location Icon -->
+                <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                </svg>
+                <h4 class="text-white">02.</h4>
+              </div>
+              
+         
+              
+              <div class="work-info position-relative p-4 border-3 border border-white bg-lightgreen1 ms-9 rounded2 d-flex align-items-center">
+                <div class="work-img me-3">
+                  <img src="images/Mysore.png" class="rounded-1 shadow-lg" alt="Mysore Icon" width="100" height="auto" />
+                </div>
+                <div class="work-text">
+                  <h4 class="mb-3">Mysore</h4>
+                  <p>A serene city steeped in royal history, Mysore is famed for its majestic palaces, clean streets, yoga centers, and Dasara festivities—a peaceful escape with cultural depth.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Bengaluru -->
+            <div class="timeline-row position-relative w-md-50 mb-4">
+              <div class="work-box-number text-center p-2 rounded-circle border border-3 border-lightgreen bg-green d-inline-block h-auto mb-2 position-absolute top-50 start-80 translate-middle">
+                <!-- Location Icon -->
+                <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                </svg>
+                <h4 class="text-white">03.</h4>
+              </div>
+              
+           
+              
+              <div class="work-info position-relative p-4 border-3 border border-white bg-lightgreen1 me-9 rounded2 d-flex align-items-center">
+                <div class="work-text pe-1">
+                  <h4 class="mb-2">Bengaluru</h4>
+                  <p>India's tech capital, Bengaluru is a dynamic city with a cool climate, thriving startup culture, and lively nightlife—perfect for both business and leisure travelers alike.</p>
+                </div>
+                <div class="work-img">
+                  <img src="images/bengaluru.png" class="rounded-1 shadow-lg" alt="Bengaluru Icon" width="100" height="auto" />
+                </div>
+              </div>
+            </div>
+            
+            <!-- Hyderabad -->
+            <div class="timeline-row position-relative w-md-50 ms-auto mb-0">
+              <div class="work-box-number text-center p-2 rounded-circle border border-3 border-lightgreen bg-green d-inline-block h-auto mb-2 position-absolute top-50 start-0 translate-middle">
+                <!-- Location Icon -->
+                <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                </svg>
+                <h4 class="text-white">04.</h4>
+              </div>
+              
+         
+              <div class="work-info position-relative p-4 border-3 border border-white bg-lightgreen1 ms-9 rounded2 d-flex align-items-center">
+                <div class="work-img me-3">
+                  <img src="images/Hyberabad.png" class="rounded-1 shadow-lg" alt="Hyderabad Icon" width="100" height="auto" />
+                </div>
+                <div class="work-text">
+                  <h4 class="mb-3">Hyderabad</h4>
+                  <p>The City of Pearls, Hyderabad is famous for its Mughal-era history, tech industry, and mouthwatering biryani—where old-world charm meets high-tech growth in perfect harmony.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- How we work Section Ends -->
+
+  <!-- Our Projects Section Starts -->
+  <section class="project pb-10 ">
+    <div class="container">
+      <div class="project-inner">
+        <div class="section-title mb-6 text-center text-lg-start">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-7">
+              <div class="section-title-left">
+                <h6 class="mb-2 green1 text-uppercase fw-medium">Our Vehicles</h6>
+                <h2 class="ps-4 border-start border-3 border-green">Comfort & Versatility for <span class="green"> Every Journey</span></h2>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="section-title-right">
+                <p class="mb-3">From compact cars to spacious MPVs, our well-maintained vehicles offer comfort, reliability, and eco-friendly options for every ride.</p>
+                <a href="/vehicles" class="btn btn2">All Vehicles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-body">
+          <div class="project-slider">
+            <div class="slide mx-1">
+              <div class="project-box rounded2 overflow-hidden border border-2 border-lightgreen">
+                <div class="project-image position-relative">
+                  <img src="images/Primesedan.jpg" alt="project image" class="w-100 rounded2">
+                  <div class="project-info w-100 p-4  position-absolute">
+                    <div class="overlay bg-white"></div>
+                    <div class="project-info-inner position-relative">
+                      <h5 class="mb-4"><a href="project-detail.html" class="black">Sedan</a></h5>
+                    
+                    </div>
+                    <div class="more-btn black position-relative">
+                      <span class="fw-medium"><span class="green1 fw-bold">125</span> Trips Completed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide mx-1">
+              <div class="project-box rounded2 overflow-hidden border border-2 border-lightgreen">
+                <div class="project-image position-relative">
+                  <img src="images/SUV.jpg" alt="project image" class="w-100 rounded2 ">
+                  <div class="project-info w-100 p-4 position-absolute">
+                    <div class="overlay bg-white"></div>
+                    <div class="project-info-inner position-relative">
+                      <h5 class="mb-4"><a href="project-detail.html" class="black">SUV</a></h5>
+                   
+                    <div class="more-btn black">
+                      <span class="fw-medium"><span class="green1 fw-bold">231</span> Trips Completed</span>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide mx-1">
+              <div class="project-box rounded2 overflow-hidden border border-2 border-lightgreen">
+                <div class="project-image position-relative">
+                  <img src="images/innova.jpg" alt="project image" class="w-100 rounded2">
+                  <div class="project-info w-100 p-4 position-absolute">
+                    <div class="overlay bg-white"></div>
+                    <div class="project-info-inner position-relative">
+                      <h5 class="mb-4"><a href="project-detail.html" class="black">Innova</a></h5>
+
+                    <div class="more-btn black">
+                      <span class="fw-medium"><span class="green1 fw-bold">450</span> Trips Completed</span>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide mx-1">
+              <div class="project-box rounded2 overflow-hidden border border-2 border-lightgreen">
+                <div class="project-image position-relative">
+                  <img src="images/innova-crysta.jpg" alt="project image" class="w-100 rounded2">
+                  <div class="project-info w-100 p-4 position-absolute">
+                    <div class="overlay bg-white"></div>
+                    <div class="project-info-inner position-relative">
+                      <h5 class="mb-4"><a href="project-detail.html" class="black">innova-crysta</a></h5>
+                   
+                    <div class="more-btn black">
+                      <span class="fw-medium"><span class="green1 fw-bold">139</span> Trips Completed</span>
+                    </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Projects Section Ends -->
+
+
+  <!-- Footer Section Starts -->
+  <%- include('../partials/footer') %>
+
+  <!-- Footer Section Starts -->
+
+  <!--Back-to-top Button start-->
+  <div id="back-to-top">
+    <a href="#" class="bg-green position-relative align-items-center rounded-circle d-block border border-4 border-grey"></a>
+  </div>
+  <!--Bacl-to-top Button end-->
+ 
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

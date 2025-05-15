@@ -1,0 +1,17 @@
+*.html
+
+
+node_modules
+
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Build output
+dist/
+build/
+
+remain_files/

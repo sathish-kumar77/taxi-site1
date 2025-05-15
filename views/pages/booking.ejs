@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Book your ride - SAGO-Taxi</title>
+  
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/ev-logo-02.png">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+    <!--CSS Plugins-->
+    <link rel="stylesheet" href="css/plugin.css">
+    <!-- Default CSS-->
+    <link rel="stylesheet" href="css/default.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+  
+    <!--FontAwesome CSS-->
+    <link rel="stylesheet" href="icons/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  </head>
+<body>
+  <!-- Header Section Starts -->
+  <%- include('../partials/header') %>
+  <section class="banner breadcrumb mb-0 pt-11 pb-10 position-relative rounded3 rounded-top-0">
+    <div class="overlay rounded3 rounded-top-0"></div>
+    <div class="container position-relative">
+      <div class="banner-inner pt-10 w-lg-75 m-auto text-center text-white ">
+        <div class="section-title mb-2">
+          <h1 class="text-white mb-2">Book your ride</h1>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li><a href="/">Home</a></li>
+            <li class="mx-4"><i class="fa fa-star-o green" aria-hidden="true"></i></li>
+            <li><a href="">Booking</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="taxi-booking" class="taxi-booking-section py-5">
+    <div class="container">
+      <div class="section-title text-center text-lg-start pt-4">
+        <h2 class="ps-4 border-start border-3 border-green">
+          Book your taxi <span class="green">Instantly!</span> 
+        </h2>
+      </div>
+        <div class="taxi-container">
+            <div class="taxi-drive-in">
+                <div class="taxi-sign">TAXI BOOKING</div>
+                <div class="taxi-front"></div>
+                <div class="taxi-body">
+                    <div class="booking-form" id="bookingForm">
+                        <div class="form-header">
+                            <h2><i class="fa fa-car me-2"></i>BOOK YOUR RIDE</h2>
+                        </div>
+                        <form id="taxiBookingForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Mobile Number</label>
+                                    <input type="tel" class="form-control" id="mobileNo" placeholder="Enter mobile number" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Service Type</label>
+                                    <select class="form-select" id="serviceType" required>
+                                        <option value="" disabled selected>Select service</option>
+                                        <option value="one-way">One Way</option>
+                                        <option value="round-trip">Round Trip</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Pickup Location</label>
+                                    <input type="text" class="form-control" id="pickupLocation" placeholder="Enter pickup" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Drop Location</label>
+                                    <input type="text" class="form-control" id="dropLocation" placeholder="Enter drop" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Pickup Date</label>
+                                    <input type="date" class="form-control" id="pickupDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Pickup Time</label>
+                                    <input type="time" class="form-control" id="pickupTime" required>
+                                </div>
+                                <!-- Added Round-Trip Field -->
+                                <div class="col-md-6 round-trip-fields" style="display: none;">
+                                    <label class="form-label">Return Date</label>
+                                    <input type="date" class="form-control" id="returnDate">
+                                </div>
+                                <div class="col-md-6 round-trip-fields" style="display: none;">
+                                  <label class="form-label">Return Time</label>
+                                  <input type="time" class="form-control" id="returnDate">
+                              </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-book btn-lg">
+                                        <i class="fas fa-car-side me-2"></i>Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="taxi-back"></div>
+                <div class="wheel front-wheel">
+                    <img src="images/wheel.png" alt="Tyre" class="tyre-img">
+                </div>
+                <div class="wheel back-wheel">
+                    <img src="images/wheel.png" alt="Tyre" class="tyre-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('../partials/footer') %>
+
+  <!-- Footer Section Starts -->
+
+  <!--Back-to-top Button start-->
+  <div id="back-to-top">
+    <a href="#" class="bg-green position-relative align-items-center rounded-circle d-block border border-4 border-grey"></a>
+  </div>
+  <!--Bacl-to-top Button end-->
+ 
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>  

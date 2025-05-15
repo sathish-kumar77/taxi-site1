@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Page not found - SAGO-Taxi</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/ev-logo-02.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!--CSS Plugins-->
+  <link rel="stylesheet" href="css/plugin.css">
+  <!-- Default CSS-->
+  <link rel="stylesheet" href="css/default.css">
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--FontAwesome CSS-->
+  <link rel="stylesheet" href="icons/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <%- include('../partials/header') %>
+
+  
+  <!-- Banner Section Starts -->
+  <section class="banner breadcrumb mb-0 pt-11 pb-10 position-relative rounded3 rounded-top-0">
+    <div class="overlay rounded3 rounded-top-0"></div>
+    <div class="container position-relative">
+      <div class="banner-inner pt-10 w-lg-75 m-auto text-center text-white ">
+        <div class="section-title mb-2">
+          <h1 class="text-white mb-2">404 Error</h1>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li><a href="index.html">Home</a></li>
+            <li class="mx-4"><i class="fa fa-star-o green" aria-hidden="true"></i></li>
+            <li><a href="">404 Error</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Section Ends -->
+
+  <!-- Error Section Starts -->
+  <section class="error py-10">
+    <div class="container">
+      <div class="error-inner text-center">
+        <div class="error-image mb-6">
+          <img src="images/404_err.png" alt="error image" class="w-lg-40 w-md-60 w-100 m-auto">
+        </div>
+        <div class="section-body w-lg-50 w-md-75 m-auto">
+          <h1 class="text-white mb-2">Ooops.</h1>
+          <h2 class="mb-4">the page you were looking for couldn't be found.</h2>
+          <p class="mb-4">It looks like nothing was found at this location. Maybe try one of the links below or a search?</p>
+          <div class="search-bar d-md-flex bg-green rounded2">
+            <input type="text" name="search" id="search" class="bg-grey" placeholder="Search..."><a href="" class="btn btn2"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Error Section Ends -->
+
+
+
+  <%- include('../partials/footer') %>
+
+  <!--Back-to-top Button start-->
+  <div id="back-to-top">
+    <a href="#" class="bg-green position-relative align-items-center rounded-circle d-block border border-4 border-grey"></a>
+  </div>
+  <!--Bacl-to-top Button end-->
+ 
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/plugin.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
